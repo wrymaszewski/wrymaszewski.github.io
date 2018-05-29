@@ -1,0 +1,10 @@
+.desc {
+    display: none;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    background: rgba(0, 0, 0, .7);
+    /* height: 200px; */
+    /* width: 300px; */
+    color: #fff;
+}

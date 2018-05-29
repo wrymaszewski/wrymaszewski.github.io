@@ -2,17 +2,20 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- bootstrap -->
+    <!-- bootstrap and jQuery -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- static -->
+    <link rel="stylesheet" href="master.css">
+    <script type="text/javascript" src="master.js"></script>
 
     <meta charset="utf-8">
     <title>Wojtek Rymaszewski's Porfolio Page</title>
   </head>
   <body>
-    <div class="cointainer">
+    <div class="cointainer-fluid">
       <div class="row">
         <div class="col-md-4 col-sm-12 sidebar">
             <img src="DSC_6126crop.jpg" alt="Profile Picture" class="rounded-circle"
@@ -32,6 +35,84 @@
         </div>
         <div class="col-md-8 col-sm-12 main-body">
           <h1>Portfolio Apps</h1>
+            <ul class="app_list">
+              <li>
+                <a class="link" href="https://plantpath-demo.herokuapp.com/">PlantPath DB</a>
+                <p class="text-justify desc">
+                  Database interface for biological laboratory management.
+                  Users can register, log in, and add laboratory resources,
+                  manuals and expenses. Information is easily reclaimed using
+                  a friendly interface. This is a demo version, as the main
+                  release is in use by  <a href="http://www.plantpath.pl">
+                  Laboratory of Plant Pathogenesis</a> and contains sensitive
+                  information.
+               </p>
+                <p><strong>Ruby on Rails</strong>, jQuery Datatables</p>
+              </li>
+              <li>
+                <a class="link" href="https://trackyourtops.herokuapp.com/">Track Your Tops</a>
+                <p class="text-justify desc">
+                  Ascent database for rock climbers. Users can create profiles
+                  and track both their indoor and outdoor ascents. The app is in
+                  development, but it already provides some simple statistics.
+                  Users can also join groups and socialize with others.
+                </p>
+                <p><strong>Django</strong>, jQuery Datatables, GoogleMapsAPI, Highcharts</p>
+              </li>
+              <li>
+                <a class="link" href="http://wrymaszewski.pythonanywhere.com/">Veturilo Stats</a>
+                <p class="text-justify desc">
+                  Statistics for the network of city bikes in Warsaw - Veturilo.
+                  The app scrapes Veturilo website in 10min intervals, stores
+                  the information about the availability of bicycles and
+                  performs data aggregation on a monthly basis. Machine learning
+                  module helping with future predictions is planned.
+                </p>
+                <p><strong>Django</strong>, jQuery Datatables, GoogleMapsAPI,
+                Pandas, Plotly, BeautifulSoup4</p>
+              </li>
+              <li>
+                <p>Shiny Apps</p>
+                <p class="text-justify desc">
+                  A collection of small web apps written in <strong>R programming
+                  language</strong> and used for biological calculations.
+                  <ul>
+                    <li>
+                      <a class="link" href="https://wrymaszewski.shinyapps.io/thermofluor3">
+                        ThermoFluor </a>
+                      <p class="text-justify desc">
+                        Calculation of protein melting temperatures (Tm) based on
+                        protein melting data from qPCR machines. Experimental
+                        designs and raw data are uses as input. The app annotates
+                        the samples, smoothes the melting curve, calculates Tm,
+                        and calculates means and SDs.
+                      </p>
+                    </li>
+                    <li>
+                      <a class="link" href="https://wrymaszewski.shinyapps.io/mass_spec">
+                        Peptide List Comparison </a>
+                      <p class="text-justify desc">
+                        Comparison of mass spectrometry lists of hits from MASCOT.
+                        The app take .xlsx files as input and produces both lists
+                        of intersections and Venn diagrams.
+                      </p>
+                    </li>
+                    <li>
+                      <a class="link" href="http://wrymaszewski.shinyapps.io/competitive_index">
+                        Competitive index</a>
+                      <p class="text-justify desc">
+                        Calculation and plotting of competitive index (CI),
+                        which is an analysis performed in plant pathogenesis
+                        research. The app takes either raw data or calculated
+                        CI in .xlsx format. It outputs calculated CI
+                        (if applicable), means and statistics, and adjustable
+                        boxplots and barplots.
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
