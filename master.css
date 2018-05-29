@@ -3,8 +3,12 @@
     /* position: absolute; */
     /* left: 0; */
     /* top: 0; */
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .5);
     /* height: 200px; */
     /* width: 300px; */
     color: #fff;
+}
+
+.container {
+  padding: 50px;
 }

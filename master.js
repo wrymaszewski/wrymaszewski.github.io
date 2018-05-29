@@ -1,11 +1,10 @@
-$('.link').on({
-    mouseover: function() {
-        $(this).find('.desc').fadeIn(200);
-        console.log('mouseover')
-    },
-    mouseout: function() {
-        $(this).find('.desc').stop().fadeOut(200);
-        console.log('mouseout')
-
-    },
+$(document).ready(function () {
+  $('.drop').on({
+      'mouseover': function() {
+          $(this).find('.desc').show();
+      },
+      'mouseout': function() {
+          $(this).find('.desc').hide();
+      },
+  });
 });
