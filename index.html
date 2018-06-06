@@ -15,6 +15,8 @@
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 
     <meta charset="utf-8">
     <title>Wojtek Rymaszewski's Porfolio Page</title>
@@ -23,39 +25,43 @@
     <div class="cointainer">
       <div class="row">
         <div class="col-md-4 col-sm-12 sidebar">
-            <img src="DSC_6126crop.jpg" alt="Profile Picture" class="rounded-circle"
-            width='200px'>
-          <h3>Wojtek Rymaszewski</h3>
-          <p>wrymaszewski@gmail.com</p>
-          <p>
+          <div class="profile">
+            <img src="DSC_6126crop.jpg" alt="Profile Picture" class="rounded-circle mx-auto d-block"
+            width='200px' >
+          <h3 class="text-center">Wojtek Rymaszewski</h3>
+          <p class="text-center">wrymaszewski@gmail.com</p>
+          <p class="text-center">
              <a href="https://www.linkedin.com/in/wrymaszewski/">
                <strong>LinkedIn</strong>
              </a>
           </p>
-          <p>
+          <p class="text-center">
              <a href="https://github.com/wrymaszewski">
                <strong>GitHub</strong>
              </a>
           </p>
-        </div>
+          </div>
+          </div>
+
         <div class="col-md-8 col-sm-12 main-body">
           <h1>Portfolio Apps</h1>
+          <hr>
             <ul class="list-group">
-              <li class="list-group-item list-group-item-dark list-group-item-action drop">
-                <a class="link" href="https://plantpath-demo.herokuapp.com/">PlantPath DB</a>
+              <li class="list-group-item list-group-item-action drop">
+                <h5><a class="link" href="https://plantpath-demo.herokuapp.com/">PlantPath DB</a></h5>
                 <p class="text-justify desc">
                   Database interface for biological laboratory management.
-                  Users can register, log in, and add laboratory resources,
-                  manuals and expenses. Information i d-sm-nones easily reclaimed using
+                  Users can register, log-in, and add laboratory resources,
+                  manuals and expenses. Information is easily reclaimed using
                   a friendly interface. This is a demo version, as the main
-                  release is in use by  <a href="http://www.plantpath.pl">
-                  Laboratory of Plant Pathogenesis</a> and contains sensitive
+                  release is in use by <a href="http://www.plantpath.pl"><strong>
+                  Laboratory of Plant Pathogenesis</strong></a> and contains sensitive
                   information.
                </p>
                 <p><strong>Ruby on Rails</strong>, jQuery Datatables</p>
               </li>
-              <li class="list-group-item list-group-item-dark list-group-item-action drop">
-                <a class="link" href="https://trackyourtops.herokuapp.com/">Track Your Tops</a>
+              <li class="list-group-item list-group-item-action drop">
+                <h5><a class="link" href="https://trackyourtops.herokuapp.com/">Track Your Tops</a></h5>
                 <p class="text-justify desc">
                   Ascent database for rock climbers. Users can create profiles
                   and track both their indoor and outdoor ascents. The app is in
@@ -64,8 +70,8 @@
                 </p>
                 <p><strong>Django</strong>, jQuery Datatables, GoogleMapsAPI, Highcharts</p>
               </li>
-              <li class="list-group-item list-group-item-dark list-group-item-action drop">
-                <a class="link" href="http://wrymaszewski.pythonanywhere.com/">Veturilo Stats</a>
+              <li class="list-group-item list-group-item-action drop">
+                <h5><a class="link" href="http://wrymaszewski.pythonanywhere.com/">Veturilo Stats</a></h5>
                 <p class="text-justify desc">
                   Statistics for the network of city bikes in Warsaw - Veturilo.
                   The app scrapes Veturilo website in 10min intervals, stores
@@ -76,13 +82,17 @@
                 <p><strong>Django</strong>, jQuery Datatables, GoogleMapsAPI,
                 Pandas, Plotly, BeautifulSoup4</p>
               </li>
-              <li class="list-group-item list-group-item-dark list-group-item-action">
-                <p>Shiny Apps</p>
+            </ul>
+            <hr>
+
+
+              <!-- <li class="list-group-item list-group-item-action"> -->
+                <h5>Shiny Apps</h5>
                 <p class="text-justify">
-                  A collection of small web apps written in <strong>R programming
-                  language</strong> and used for biological calculations.
+                  A collection of small web apps written in <strong>R</strong>
+                  and used for biological calculations.
                   <ul class="list-group">
-                    <li class="list-group-item list-group-item-dark list-group-item-action drop">
+                    <li class="list-group-item list-group-item-action drop">
                       <a class="link" href="https://wrymaszewski.shinyapps.io/thermofluor3">
                         ThermoFluor </a>
                       <p class="text-justify desc">
@@ -93,7 +103,7 @@
                         and calculates means and SDs.
                       </p>
                     </li>
-                    <li class="list-group-item list-group-item-dark list-group-item-action drop">
+                    <li class="list-group-item  list-group-item-action drop">
                       <a class="link" href="https://wrymaszewski.shinyapps.io/mass_spec">
                         Peptide List Comparison </a>
                       <p class="text-justify desc">
@@ -102,7 +112,7 @@
                         of intersections and Venn diagrams.
                       </p>
                     </li>
-                    <li class="list-group-item list-group-item-dark list-group-item-action drop">
+                    <li class="list-group-item list-group-item-action drop">
                       <a class="link" href="http://wrymaszewski.shinyapps.io/competitive_index">
                         Competitive index</a>
                       <p class="text-justify desc">
@@ -117,7 +127,6 @@
                   </ul>
                   </li>
                 </p>
-            </ul>
         </div>
       </div>
     </div>
